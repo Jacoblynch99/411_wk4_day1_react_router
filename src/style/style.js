@@ -11,6 +11,19 @@ const useStyles = makeStyles({
         paddingTop: 50,
         paddingBottom: 50,
     },
+    gridContainer: {
+        marginTop: 20,
+        paddingLeft: 40,
+        paddingRight: 40,
+    },
+    gridItem: {
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    navText: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
 })
 
 export default useStyles
