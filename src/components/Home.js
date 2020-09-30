@@ -2,13 +2,15 @@ import React from 'react'
 import { Card, CardContent, CardActions, Divider } from '@material-ui/core'
 import cars from '../cars.json'
 import { Link } from 'react-router-dom'
+import useStyles from '../style/style'
 
 const Home = () => {
+    const classes = useStyles()
     return (
         <div className="card-container">
             {cars.map((car, idx) => (
                 <Card key={idx} className="card">
-                    <CardContent className="text-gray">
+                    <CardContent color="primary" className="text-gray">
                         <span>{car.Name.toUpperCase()}</span>
                         <ul>
                             <li>Miles_per_Gallon: {car['Miles_per_Gallon']}</li>
@@ -18,8 +20,7 @@ const Home = () => {
                         </ul>
                     </CardContent>
                     <Divider />
-                    <CardActions style={{ color: 'mediumblue' }}>
-                        {/* Change a tag to Link */}
+                    <CardActions className={classes.linkColor}>
                         <Link to={`/car/${car.id}`}>More Info</Link>
                     </CardActions>
                 </Card>

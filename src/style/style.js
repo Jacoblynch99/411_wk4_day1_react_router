@@ -1,3 +1,4 @@
+import { blue } from '@material-ui/core/colors'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -23,6 +24,16 @@ const useStyles = makeStyles({
     navText: {
         fontSize: 24,
         fontWeight: 'bold',
+    },
+    navListItem: {
+        fontSize: 24,
+        margin: 20,
+    },
+    darkToggle: {
+        marginTop: 12,
+    },
+    linkColor: {
+        color: 'blue',
     },
 })
 

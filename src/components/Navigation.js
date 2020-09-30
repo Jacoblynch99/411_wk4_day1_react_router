@@ -52,18 +52,25 @@ function Navigation(props) {
                         </Grid>
                     </Grid>
                 </Drawer>
-                <Typography variant="h6" style={{ flexGrow: '1' }}>
+                <Typography
+                    style={{ flexGrow: '1' }}
+                    className={classes.navListItem}
+                >
                     FakeCars.com
                 </Typography>
                 <ul className="nav-list">
-                    <li className="nav-list-item">
+                    <li className={classes.navListItem}>
                         <Link to={`/`}>Home</Link>
                     </li>
-                    <li className="nav-list-item">
+                    <li className={classes.navListItem}>
                         <Link to={`/about`}>About</Link>
                     </li>
                     <li>
-                        <IconButton onClick={props.darkMode} color="inherit">
+                        <IconButton
+                            onClick={props.darkMode}
+                            color="inherit"
+                            className={classes.darkToggle}
+                        >
                             <Brightness4Icon color="inherit" />
                         </IconButton>
                     </li>
